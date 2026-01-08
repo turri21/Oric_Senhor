@@ -1,3 +1,8 @@
+-=(Oric_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # [Oric-1 / Oric Atmos](https://en.wikipedia.org/wiki/Oric) for MiSTer Platform
 
 Original Read.Me for MiST. Not all info is releavant to MiSTer.
