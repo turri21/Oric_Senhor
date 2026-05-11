@@ -236,7 +236,7 @@ localparam CONF_STR = {
 	"P1O[51:50],Tape Audio,Mute,Low,High;",
 	"P1O[52],Tape Input,File,ADC;",
 	"P1O[59:58],Tape Load,Fast,Ultra,Off;",
-	"P1O[57],Autoload TAP,On,Off;",
+	"P1O[57],Autoload TAP,Off,On;",
 	"P1O[60],Named CLOAD Rewind,On,Off;",
 	"P1-;",
 	"P1O[55:54],Joystick Adapter,None,PASE,IJK;",
@@ -259,7 +259,7 @@ wire [1:0] tapeVolume  = status[51:50];
 wire       tapeUseADC = status[52];
 wire       tapeRewind = status[53];
 wire [1:0] joystick_adapter = status[55:54];
-wire       tap_autorun_en   = ~status[57];  // menu shows On (default) / Off
+wire       tap_autorun_en   = status[57];  // menu shows Off (default) / On
 wire [1:0] tape_load_mode   = status[59:58];
 wire       tape_mode_fast   = (tape_load_mode == 2'd0);
 wire       tape_mode_ultra  = (tape_load_mode == 2'd1);
