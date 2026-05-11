@@ -1,3 +1,8 @@
+-=(Oric_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # Oric / Oric Atmos for MiSTer
 
 This repository contains an Oric-1, Oric Atmos, and Pravetz 8D FPGA core for
